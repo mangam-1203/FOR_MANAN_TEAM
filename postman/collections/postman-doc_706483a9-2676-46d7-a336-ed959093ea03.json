@@ -18,7 +18,7 @@
                         "method": "GET",
                         "header": [],
                         "url": {
-                            "raw": "{{baseUrl}}/user?id=-58095589",
+                            "raw": "{{baseUrl}}/user?id=-58095580",
                             "host": [
                                 "{{baseUrl}}"
                             ],
@@ -28,7 +28,7 @@
                             "query": [
                                 {
                                     "key": "id",
-                                    "value": "-58095589",
+                                    "value": "-58095580",
                                     "description": "(Required) ID of the user"
                                 }
                             ]
