@@ -1,0 +1,79 @@
+{
+    "info": {
+        "_postman_id": "6723fcbc-6bde-4060-b914-977d09d659d4",
+        "name": "bgfd",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "/users",
+            "id": "6b33423d-0b9f-43e5-832e-20d60c1ac65c",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/users?name=John",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "users"
+                    ],
+                    "query": [
+                        {
+                            "key": "name",
+                            "value": "John"
+                        }
+                    ]
+                },
+                "description": "List all Users matching query criteria."
+            },
+            "response": [
+                {
+                    "id": "4809faee-a2b3-4bd1-ae77-33ffde9b4fd3",
+                    "name": "200",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": {
+                            "raw": "{{baseUrl}}/users?name=John",
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "path": [
+                                "users"
+                            ],
+                            "query": [
+                                {
+                                    "key": "name",
+                                    "value": "John"
+                                }
+                            ]
+                        },
+                        "description": "List all Users matching query criteria."
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "_postman_previewlanguage": "json",
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "application/json"
+                        }
+                    ],
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": "{\n  \"id\": 1,\n  \"name\": \"John\"\n}"
+                }
+            ]
+        }
+    ],
+    "variable": [
+        {
+            "id": "baseUrl",
+            "key": "baseUrl",
+            "value": "http://localhost:3000",
+            "type": "string"
+        }
+    ]
+}
