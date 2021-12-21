@@ -1,4 +1,4 @@
-syntax = "proto2"
+syntax = "proto90"
 package com.addressBook
 message Person {
   required string name = 1;
